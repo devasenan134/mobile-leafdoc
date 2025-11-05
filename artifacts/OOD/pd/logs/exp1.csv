@@ -1,5 +1,0 @@
-image_path,domain,gt_unified,pred_unified,pred_pv,prob,topk_hit,correct
-PlantDoc-Dataset/test/Apple leaf/20180511_091252-1gy5xf5-e1526048000596.jpg,pd,apple__healthy,Cherry_(including_sour)___Powdery_mildew,Cherry_(including_sour)___Powdery_mildew,0.992087,1,0
-PlantDoc-Dataset/test/Tomato leaf late blight/late_blight_tomato_leaf_spore1x1200.jpg,pd,tomato__late_blight,corn__common_rust,Corn_(maize)___Common_rust_,1.000000,0,0
-PlantDoc-Dataset/test/Tomato leaf bacterial spot/Tom_Bact7.jpg,pd,tomato__bacterial_spot,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,1.000000,0,0
-image_path,domain,gt_unified,pred_unified,pred_pv,prob,topk_hit,correct

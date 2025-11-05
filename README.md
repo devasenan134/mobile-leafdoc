@@ -20,13 +20,13 @@ Major Gaps:
 > Runs
 > 
 > 
-> ### Run 1
+> ### Frontiers2023/Run 1
 > 
 > epochs 20
 > ran on plantvillage dataset, no normalization
 > exact settings as given on the paper
 > 
-> ### Run 2
+> ### Frontiers2023/Run 2
 > 
 > epochs 200
 > ran on plantvillage dataset, no normalization
