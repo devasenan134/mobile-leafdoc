@@ -34,13 +34,13 @@ Major Gaps:
 > 
 > - got acc ~ 99.6%, slightly higher than the paper
 > - this is the final checkpoint
-- [x]  Done
+- ✅  Done
 
 ### ⭕ robustness block:
 
 Experimenting on 3 levels
 
-- [x]  PV only → test on PD (zero-shot)
+- ✅  PV only → test on PD (zero-shot)
     
     train on PlantVillage only, test on PlantDoc.
     
