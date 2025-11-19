@@ -108,7 +108,7 @@ def main():
     ap.add_argument("--num-workers", type=int, default=4)
     ap.add_argument("--device", choices=["auto","cuda","cpu"], default="auto")
     ap.add_argument("--img-size", type=int, default=None, help="Override image size")
-    ap.add_argument("--normalize", choices=["auto","on","off"], default="auto",
+    ap.add_argument("--normalize", choices=["auto","on","off"], default="off",
                     help="ImageNet mean/std: auto=use split.json flag, on=force, off=disable")
     ap.add_argument("--save-cm-csv", type=str, default=None)
     ap.add_argument("--print-report", action="store_true")
