@@ -48,17 +48,22 @@ Experimenting on 3 levels
     
     train on PlantVillage, then fine-tune on PlantDoc.
     
-    Using 'Frontiers2023/Run 2/mobilenetv3small_best' model and fine-tune it with PlantDoc dataset.
+    Using 'Frontiers2023/Run 2/mobilenetv3small_best' model and fine-tune it with PlantDoc dataset. Fine-tune on PlantDoc dataset, with normalization and data augmentation. (run1 and run2 are not much different)
     > Runs
     > 
     > ### finetune/Run 1
     > 
     > epochs 20
-    > fine-tune on PlantDoc dataset, with normalization and data augmentation
-    > - got acc ~ 43%
+    > - got best acc ~ 50%
+    > 
+    > ### finetune/Run 2
+    > ( https://colab.research.google.com/drive/1bKeXgYZbvrBcp2T4WxQ0mcyTFCStOT7p?usp=sharing )
+    > 
+    > epochs 50
+    > - got best acc ~ 53%
     > - evaluate on PlantDoc test data
-    >       Baseline (Zero-Shot): 2.54%
-    >       Fine-Tuned:  49.58%
+    >       - Baseline (Zero-Shot): 2.54%
+    >       - Fine-Tuned:  50.42%
 
     
 - [ ]  PV+PD mixed (balanced sampler) with color constancy + RandAugment.
