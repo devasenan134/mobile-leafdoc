@@ -44,9 +44,22 @@ Experimenting on 3 levels
     
     train on PlantVillage only, test on PlantDoc.
     
-- [ ]  PV → fine-tune on PD
+- ✅  PV → fine-tune on PD
     
     train on PlantVillage, then fine-tune on PlantDoc.
+    
+    Using 'Frontiers2023/Run 2/mobilenetv3small_best' model and fine-tune it with PlantDoc dataset.
+    > Runs
+    > 
+    > ### finetune/Run 1
+    > 
+    > epochs 20
+    > fine-tune on PlantDoc dataset, with normalization and data augmentation
+    > - got acc ~ 43%
+    > - evaluate on PlantDoc test data
+    >       Baseline (Zero-Shot): 2.54%
+    >       Fine-Tuned:  49.58%
+
     
 - [ ]  PV+PD mixed (balanced sampler) with color constancy + RandAugment.
     1. train on PlantVillage+PlantDoc (only overlapping classes)

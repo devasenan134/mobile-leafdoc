@@ -1,2 +1,4 @@
 PlantVillage-Dataset/*
 PlantDoc-Dataset/*
+.DS_Store
+.ipynb_checkpoints/*
