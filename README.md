@@ -66,9 +66,23 @@ Experimenting on 3 levels
     >       - Fine-Tuned:  50.42%
 
     
-- [ ]  PV+PD mixed (balanced sampler) with color constancy + RandAugment.
+- ⏳ PV+PD mixed (balanced sampler) with color constancy + RandAugment.
     1. train on PlantVillage+PlantDoc (only overlapping classes)
     2. using a dataset-balanced sampler and robust augmentations.
+
+    > Runs
+    > 
+    > ### mixed_pv_pd/Run 1
+    > 
+    > epochs 10
+    > - got best acc ~ 98%
+    > 
+    > ### mixed_pv_pd/Run 2
+    > 
+    > epochs 15
+    > - got best acc ~ 99.4%
+    > - evaluate on PlantDoc test data
+    >       - Mixed:  56.78%
 
 ### ⬜ check compression block:
 
