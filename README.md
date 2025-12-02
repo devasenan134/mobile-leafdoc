@@ -71,6 +71,7 @@ Experimenting on 3 levels
     2. using a dataset-balanced sampler and robust augmentations.
 
     > Runs
+    > use RandAugment + ColorConstancy (with balance classes)
     > 
     > ### mixed_pv_pd/Run 1
     > 
@@ -83,6 +84,17 @@ Experimenting on 3 levels
     > - got best acc ~ 99.4%
     > - evaluate on PlantDoc test data
     >       - Mixed:  56.78%
+
+    3. try using other augmentation, Asymmetric (Heavy noise for PV, Light for PD), + FDA (Fourier Domain Adaptation)
+    > Runs
+    > use Asymmetric + FDA (with balance classes + domains (upweights PD 5x))
+    > 
+    > ### mixed_with_fda/Run 1
+    > 
+    > epochs 18 
+    > - got best acc ~ 98.6%
+    > - evaluate on PlantDoc test data
+    >       - Mixed:  60.17%
 
 ### ⬜ check compression block:
 
