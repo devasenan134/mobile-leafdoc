@@ -2,6 +2,8 @@ PlantVillage-Dataset/*
 PlantDoc-Dataset/*
 .DS_Store
 .ipynb_checkpoints/*
+data_fda_pd_balanced/*
+
 
 finetune_pd.py
 runs/finetune_pd

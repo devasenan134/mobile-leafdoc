@@ -121,18 +121,33 @@ class SplitDataset(Dataset):
         return x, y
 
 
-def make_domain_balanced_sampler(labels, sources, pd_weight=2.0):
-    """Class-balanced *and* domain-reweighted sampler."""
+def make_domain_balanced_sampler(labels, sources, pd_weight=3.0, syn_weight=0.8, class_weight_from="pd"):
+    """
+    labels: list[int] global class ids
+    sources: list[str] in {"pv","pd","syn"}
+    - class weights computed on 'pd' only to avoid synth overpowering rare classes
+    - domain multipliers: pv=1.0, pd=pd_weight, syn=syn_weight
+    """
+    # choose which subset to compute class weights from
+    sel_idx = [i for i,s in enumerate(sources) if (class_weight_from=="all") or (s=="pd")]
     counts = defaultdict(int)
-    for y in labels: counts[int(y)] += 1
+    for i in sel_idx:
+        counts[int(labels[i])] += 1
+    # smooth in case some class absent
+    for c in set(labels):
+        if c not in counts: counts[c] = 1
+
     total = sum(counts.values()); C = len(counts)
-    class_w = {c: total/(C*cnt) for c, cnt in counts.items()}
-    weights = []
-    for y, s in zip(labels, sources):
-        w = class_w[int(y)] * (pd_weight if s == "pd" else 1.0)
-        weights.append(w)
-    weights = torch.tensor(weights, dtype=torch.float)
-    return WeightedRandomSampler(weights, num_samples=len(labels), replacement=True)
+    class_w = {c: total/(C*n) for c,n in counts.items()}  # inverse freq, normalized
+
+    w = []
+    for y,s in zip(labels, sources):
+        base = class_w.get(int(y), 1.0)
+        mult = 1.0
+        if s == "pd":  mult = pd_weight
+        elif s == "syn": mult = syn_weight
+        w.append(base * mult)
+    return WeightedRandomSampler(torch.tensor(w, dtype=torch.float), num_samples=len(labels), replacement=True)
 
 
 # ----------------- model -----------------
@@ -261,7 +276,8 @@ def main():
                            img_size=args.img_size, normalize=args.normalize, train=False)
 
     # samplers
-    sampler_mixed = make_domain_balanced_sampler([L[i] for i in tr_idx], [S[i] for i in tr_idx], pd_weight=args.pd_weight)
+    sampler_mixed = make_domain_balanced_sampler([L[i] for i in tr_idx], [S[i] for i in tr_idx],
+                                       pd_weight=3.0, syn_weight=0.8, class_weight_from="pd")
     dl_tr = DataLoader(ds_tr, batch_size=args.batch_size, sampler=sampler_mixed, num_workers=4, pin_memory=True)
     dl_va = DataLoader(ds_va, batch_size=args.batch_size, shuffle=False, num_workers=4, pin_memory=True)
     dl_pvte = DataLoader(ds_pvte, batch_size=args.batch_size, shuffle=False, num_workers=4, pin_memory=True)
