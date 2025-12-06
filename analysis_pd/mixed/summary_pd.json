@@ -1,0 +1,572 @@
+{
+  "overall": {
+    "top1_acc": 0.5423728813559322,
+    "macro_f1": 0.5180337549283811,
+    "topk_acc": 0.8940677966101694
+  },
+  "per_class": [
+    {
+      "class": "tomato__spider_mites_two_spotted",
+      "f1": 0.0,
+      "acc": NaN,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    {
+      "class": "tomato__bacterial_spot",
+      "f1": 0.1111111111111111,
+      "acc": 0.1111111111111111,
+      "precision": 0.1111111111111111,
+      "recall": 0.1111111111111111
+    },
+    {
+      "class": "potato__late_blight",
+      "f1": 0.11764705882352941,
+      "acc": 0.125,
+      "precision": 0.1111111111111111,
+      "recall": 0.125
+    },
+    {
+      "class": "tomato__mosaic_virus",
+      "f1": 0.15384615384615385,
+      "acc": 0.1,
+      "precision": 0.3333333333333333,
+      "recall": 0.1
+    },
+    {
+      "class": "tomato__leaf_mold",
+      "f1": 0.19047619047619047,
+      "acc": 0.3333333333333333,
+      "precision": 0.13333333333333333,
+      "recall": 0.3333333333333333
+    },
+    {
+      "class": "potato__early_blight",
+      "f1": 0.3,
+      "acc": 0.375,
+      "precision": 0.25,
+      "recall": 0.375
+    },
+    {
+      "class": "corn__gray_leaf_spot",
+      "f1": 0.3333333333333333,
+      "acc": 0.5,
+      "precision": 0.25,
+      "recall": 0.5
+    },
+    {
+      "class": "pepper_bell__bacterial_spot",
+      "f1": 0.375,
+      "acc": 0.3333333333333333,
+      "precision": 0.42857142857142855,
+      "recall": 0.3333333333333333
+    },
+    {
+      "class": "tomato__late_blight",
+      "f1": 0.42857142857142855,
+      "acc": 0.3,
+      "precision": 0.75,
+      "recall": 0.3
+    },
+    {
+      "class": "tomato__early_blight",
+      "f1": 0.42857142857142855,
+      "acc": 0.3333333333333333,
+      "precision": 0.6,
+      "recall": 0.3333333333333333
+    },
+    {
+      "class": "apple__scab",
+      "f1": 0.46153846153846156,
+      "acc": 0.3,
+      "precision": 1.0,
+      "recall": 0.3
+    },
+    {
+      "class": "soybean__healthy",
+      "f1": 0.5,
+      "acc": 0.375,
+      "precision": 0.75,
+      "recall": 0.375
+    },
+    {
+      "class": "tomato__healthy",
+      "f1": 0.5,
+      "acc": 0.375,
+      "precision": 0.75,
+      "recall": 0.375
+    },
+    {
+      "class": "pepper_bell__healthy",
+      "f1": 0.5,
+      "acc": 0.625,
+      "precision": 0.4166666666666667,
+      "recall": 0.625
+    },
+    {
+      "class": "blueberry__healthy",
+      "f1": 0.5185185185185185,
+      "acc": 0.6363636363636364,
+      "precision": 0.4375,
+      "recall": 0.6363636363636364
+    },
+    {
+      "class": "corn__northern_leaf_blight",
+      "f1": 0.5263157894736842,
+      "acc": 0.4166666666666667,
+      "precision": 0.7142857142857143,
+      "recall": 0.4166666666666667
+    },
+    {
+      "class": "cherry__healthy",
+      "f1": 0.5333333333333333,
+      "acc": 0.4,
+      "precision": 0.8,
+      "recall": 0.4
+    },
+    {
+      "class": "apple__rust",
+      "f1": 0.5714285714285714,
+      "acc": 0.8,
+      "precision": 0.4444444444444444,
+      "recall": 0.8
+    },
+    {
+      "class": "tomato__septoria_leaf_spot",
+      "f1": 0.5882352941176471,
+      "acc": 0.9090909090909091,
+      "precision": 0.43478260869565216,
+      "recall": 0.9090909090909091
+    },
+    {
+      "class": "tomato__yellow_leaf_curl_virus",
+      "f1": 0.6666666666666666,
+      "acc": 0.6666666666666666,
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666
+    },
+    {
+      "class": "peach__healthy",
+      "f1": 0.7368421052631579,
+      "acc": 0.7777777777777778,
+      "precision": 0.7,
+      "recall": 0.7777777777777778
+    },
+    {
+      "class": "grape__black_rot",
+      "f1": 0.7692307692307693,
+      "acc": 0.625,
+      "precision": 1.0,
+      "recall": 0.625
+    },
+    {
+      "class": "apple__healthy",
+      "f1": 0.7777777777777778,
+      "acc": 0.7777777777777778,
+      "precision": 0.7777777777777778,
+      "recall": 0.7777777777777778
+    },
+    {
+      "class": "squash__powdery_mildew",
+      "f1": 0.8,
+      "acc": 0.6666666666666666,
+      "precision": 1.0,
+      "recall": 0.6666666666666666
+    },
+    {
+      "class": "raspberry__healthy",
+      "f1": 0.8571428571428571,
+      "acc": 0.8571428571428571,
+      "precision": 0.8571428571428571,
+      "recall": 0.8571428571428571
+    },
+    {
+      "class": "grape__healthy",
+      "f1": 0.9090909090909091,
+      "acc": 0.8333333333333334,
+      "precision": 1.0,
+      "recall": 0.8333333333333334
+    },
+    {
+      "class": "corn__common_rust",
+      "f1": 0.9090909090909091,
+      "acc": 1.0,
+      "precision": 0.8333333333333334,
+      "recall": 1.0
+    },
+    {
+      "class": "strawberry__healthy",
+      "f1": 0.9411764705882353,
+      "acc": 1.0,
+      "precision": 0.8888888888888888,
+      "recall": 1.0
+    }
+  ],
+  "top_confusions": [
+    {
+      "gt": "apple__healthy",
+      "confused_with": [
+        {
+          "pred": "pepper_bell__healthy",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "gt": "apple__scab",
+      "confused_with": [
+        {
+          "pred": "apple__rust",
+          "count": 4
+        },
+        {
+          "pred": "potato__late_blight",
+          "count": 1
+        },
+        {
+          "pred": "potato__early_blight",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "apple__rust",
+      "confused_with": [
+        {
+          "pred": "potato__early_blight",
+          "count": 1
+        },
+        {
+          "pred": "potato__late_blight",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "blueberry__healthy",
+      "confused_with": [
+        {
+          "pred": "potato__early_blight",
+          "count": 1
+        },
+        {
+          "pred": "tomato__leaf_mold",
+          "count": 1
+        },
+        {
+          "pred": "tomato__bacterial_spot",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "cherry__healthy",
+      "confused_with": [
+        {
+          "pred": "blueberry__healthy",
+          "count": 3
+        },
+        {
+          "pred": "peach__healthy",
+          "count": 2
+        },
+        {
+          "pred": "apple__healthy",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "corn__gray_leaf_spot",
+      "confused_with": [
+        {
+          "pred": "corn__northern_leaf_blight",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "gt": "corn__northern_leaf_blight",
+      "confused_with": [
+        {
+          "pred": "corn__gray_leaf_spot",
+          "count": 5
+        },
+        {
+          "pred": "corn__common_rust",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "gt": "corn__common_rust",
+      "confused_with": []
+    },
+    {
+      "gt": "grape__healthy",
+      "confused_with": [
+        {
+          "pred": "blueberry__healthy",
+          "count": 1
+        },
+        {
+          "pred": "strawberry__healthy",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "grape__black_rot",
+      "confused_with": [
+        {
+          "pred": "apple__rust",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "gt": "peach__healthy",
+      "confused_with": [
+        {
+          "pred": "blueberry__healthy",
+          "count": 1
+        },
+        {
+          "pred": "cherry__healthy",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "pepper_bell__healthy",
+      "confused_with": [
+        {
+          "pred": "pepper_bell__bacterial_spot",
+          "count": 2
+        },
+        {
+          "pred": "blueberry__healthy",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "pepper_bell__bacterial_spot",
+      "confused_with": [
+        {
+          "pred": "tomato__septoria_leaf_spot",
+          "count": 3
+        },
+        {
+          "pred": "pepper_bell__healthy",
+          "count": 1
+        },
+        {
+          "pred": "tomato__early_blight",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "potato__early_blight",
+      "confused_with": [
+        {
+          "pred": "potato__late_blight",
+          "count": 3
+        },
+        {
+          "pred": "tomato__leaf_mold",
+          "count": 1
+        },
+        {
+          "pred": "tomato__septoria_leaf_spot",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "potato__late_blight",
+      "confused_with": [
+        {
+          "pred": "potato__early_blight",
+          "count": 3
+        },
+        {
+          "pred": "pepper_bell__healthy",
+          "count": 1
+        },
+        {
+          "pred": "tomato__leaf_mold",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "raspberry__healthy",
+      "confused_with": [
+        {
+          "pred": "apple__healthy",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "soybean__healthy",
+      "confused_with": [
+        {
+          "pred": "blueberry__healthy",
+          "count": 2
+        },
+        {
+          "pred": "apple__rust",
+          "count": 1
+        },
+        {
+          "pred": "raspberry__healthy",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "squash__powdery_mildew",
+      "confused_with": [
+        {
+          "pred": "tomato__leaf_mold",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "gt": "strawberry__healthy",
+      "confused_with": []
+    },
+    {
+      "gt": "tomato__healthy",
+      "confused_with": [
+        {
+          "pred": "tomato__mosaic_virus",
+          "count": 2
+        },
+        {
+          "pred": "tomato__leaf_mold",
+          "count": 2
+        },
+        {
+          "pred": "pepper_bell__healthy",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "tomato__bacterial_spot",
+      "confused_with": [
+        {
+          "pred": "tomato__septoria_leaf_spot",
+          "count": 5
+        },
+        {
+          "pred": "apple__rust",
+          "count": 1
+        },
+        {
+          "pred": "pepper_bell__bacterial_spot",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "tomato__early_blight",
+      "confused_with": [
+        {
+          "pred": "tomato__septoria_leaf_spot",
+          "count": 2
+        },
+        {
+          "pred": "tomato__bacterial_spot",
+          "count": 2
+        },
+        {
+          "pred": "potato__early_blight",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "tomato__late_blight",
+      "confused_with": [
+        {
+          "pred": "tomato__bacterial_spot",
+          "count": 3
+        },
+        {
+          "pred": "potato__late_blight",
+          "count": 2
+        },
+        {
+          "pred": "tomato__leaf_mold",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "tomato__leaf_mold",
+      "confused_with": [
+        {
+          "pred": "corn__gray_leaf_spot",
+          "count": 1
+        },
+        {
+          "pred": "potato__late_blight",
+          "count": 1
+        },
+        {
+          "pred": "potato__early_blight",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "tomato__septoria_leaf_spot",
+      "confused_with": [
+        {
+          "pred": "tomato__early_blight",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "tomato__mosaic_virus",
+      "confused_with": [
+        {
+          "pred": "tomato__leaf_mold",
+          "count": 3
+        },
+        {
+          "pred": "tomato__yellow_leaf_curl_virus",
+          "count": 2
+        },
+        {
+          "pred": "blueberry__healthy",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "tomato__yellow_leaf_curl_virus",
+      "confused_with": [
+        {
+          "pred": "pepper_bell__bacterial_spot",
+          "count": 1
+        },
+        {
+          "pred": "tomato__septoria_leaf_spot",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "gt": "tomato__spider_mites_two_spotted",
+      "confused_with": []
+    }
+  ]
+}
