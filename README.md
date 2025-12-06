@@ -69,7 +69,8 @@ Experimenting on 3 levels
 - ✅ PV+PD mixed (balanced sampler) with color constancy + RandAugment.
     1. train on PlantVillage+PlantDoc (only overlapping classes)
     > ### mixed:
-    > - epochs 30
+    > 
+    > epochs 30
     > - PV test  acc=0.9964  F1=0.9954
     > - PD test  acc=0.5297  F1=0.5182
 
@@ -93,7 +94,8 @@ Experimenting on 3 levels
 
     3. Using weights for the PD data samples (to balance the datasize imbalance)
     > ### mixed_pdweighted:
-    > - epochs 30
+    > 
+    > epochs 30
     > - use RandAugment + ColorConstancy (with balance classes)
     > - PV test  acc=0.9974  F1=0.9965
     > - PD test  acc=0.5847  F1=0.5818  (topk_acc=0.86)
