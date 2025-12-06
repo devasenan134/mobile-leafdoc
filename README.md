@@ -57,7 +57,6 @@ Experimenting on 3 levels
     > - got best acc ~ 50%
     > 
     > ### finetune/Run 2
-    > ( https://colab.research.google.com/drive/1bKeXgYZbvrBcp2T4WxQ0mcyTFCStOT7p?usp=sharing )
     > 
     > epochs 50
     > - got best acc ~ 53%
