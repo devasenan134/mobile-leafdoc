@@ -107,10 +107,9 @@ Experimenting on 3 levels
     > ### mixed_with_fda/Run 1
     > 
     > epochs 20 
-    > - got best acc ~ 98.6%
-    > - evaluate on PlantDoc test data
-    >       - PD test (top 1):  60.17% 
-    >       - PD test (top 5):  84.75% 
+    > - PV test: 98.6%
+    > - PD test:  60.17%, (top k):  84.75% 
+    >
     4. try using other augmentation, Asymmetric (Heavy noise for PV, Light for PD), + FDA (Fourier Domain Adaptation) with ImageNetV3_large
     > Runs
     > use ImageNetV3_large model
@@ -118,9 +117,8 @@ Experimenting on 3 levels
     > ### mixed_with_imageNewV3_large
     > 
     > epochs 10 
-    > - got best acc ~ 99.01%
-    > - evaluate on PlantDoc test data
-    >       - PD test:  61.44% 
+    > - PV test:  99.01%
+    > - PD test:  61.44% 
 
 ### ❌ check compression block:
 
