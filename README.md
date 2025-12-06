@@ -93,8 +93,9 @@ Experimenting on 3 levels
 
     3. Using weights for the PD data samples (to balance the datasize imbalance)
     > mixed_pdweighted:
+    > - epochs 30
     > - PV test  acc=0.9974  F1=0.9965
-    > - PD test  acc=0.5847  F1=0.5818
+    > - PD test  acc=0.5847  F1=0.5818  (topk_acc=0.86)
     > 
     5. try using other augmentation, Asymmetric (Heavy noise for PV, Light for PD), + FDA (Fourier Domain Adaptation)
     > Runs
@@ -107,7 +108,7 @@ Experimenting on 3 levels
     > - evaluate on PlantDoc test data
     >       - Mixed:  60.17%
 
-### ⬜ check compression block:
+### ❌ check compression block:
 
  - first perform PTQ-INT8
  - Compare FP32 vs INT8 on ID + OOD and report edge metrics.
