@@ -49,6 +49,7 @@ Experimenting on 3 levels
     train on PlantVillage, then fine-tune on PlantDoc.
     
     Using 'Frontiers2023/Run 2/mobilenetv3small_best' model and fine-tune it with PlantDoc dataset. Fine-tune on PlantDoc dataset, with normalization and data augmentation. (run1 and run2 are not much different)
+    ( https://colab.research.google.com/drive/1bKeXgYZbvrBcp2T4WxQ0mcyTFCStOT7p?usp=sharing )
     > Runs
     > 
     > ### finetune/Run 1
@@ -100,6 +101,7 @@ Experimenting on 3 levels
     > - PD test  acc=0.5847  F1=0.5818  (topk_acc=0.86)
     > 
     4. try using other augmentation, Asymmetric (Heavy noise for PV, Light for PD), + FDA (Fourier Domain Adaptation)
+    ( https://drive.google.com/file/d/1fZ8GDheW7PDFLvOjPkTO_UOFbwCAJvCC/view?usp=sharing )
     > Runs
     > use Asymmetric + FDA (with balance classes + domains (upweights PD 5x))
     > 
@@ -110,6 +112,7 @@ Experimenting on 3 levels
     > - PD test:  60.17%, (top k):  84.75% 
     >
     4. try using other augmentation, Asymmetric (Heavy noise for PV, Light for PD), + FDA (Fourier Domain Adaptation) with ImageNetV3_large
+    ( https://colab.research.google.com/drive/1o_6SrJaObWygqOW__M8XthyJ7GKcUWOd?usp=sharing )
     > Runs
     > use ImageNetV3_large model
     > 
