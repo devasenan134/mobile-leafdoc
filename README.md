@@ -36,7 +36,7 @@ Major Gaps:
 > - this is the final checkpoint
 - ✅  Done
 
-### ⭕ robustness block:
+### ✅ robustness block:
 
 Experimenting on 3 levels
 
@@ -66,8 +66,14 @@ Experimenting on 3 levels
     >       - Fine-Tuned:  50.42%
 
     
-- ⏳ PV+PD mixed (balanced sampler) with color constancy + RandAugment.
+- ✅ PV+PD mixed (balanced sampler) with color constancy + RandAugment.
     1. train on PlantVillage+PlantDoc (only overlapping classes)
+    > mixed:
+    > - epochs 30
+    > - PV test  acc=0.9964  F1=0.9954
+    > - PD test  acc=0.5297  F1=0.5182
+
+    
     2. using a dataset-balanced sampler and robust augmentations.
 
     > Runs
@@ -85,7 +91,12 @@ Experimenting on 3 levels
     > - evaluate on PlantDoc test data
     >       - Mixed:  56.78%
 
-    3. try using other augmentation, Asymmetric (Heavy noise for PV, Light for PD), + FDA (Fourier Domain Adaptation)
+    3. Using weights for the PD data samples (to balance the datasize imbalance)
+    > mixed_pdweighted:
+    > - PV test  acc=0.9974  F1=0.9965
+    > - PD test  acc=0.5847  F1=0.5818
+    > 
+    5. try using other augmentation, Asymmetric (Heavy noise for PV, Light for PD), + FDA (Fourier Domain Adaptation)
     > Runs
     > use Asymmetric + FDA (with balance classes + domains (upweights PD 5x))
     > 
